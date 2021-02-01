@@ -45,7 +45,8 @@ else
 	cert_files=
 endif
 
-check-files: userlist $(cert_files) secrets/oauth.env secrets/postgres.env
+# check-files: userlist $(cert_files) secrets/oauth.env secrets/postgres.env
+check-files: userlist
 
 pull:
 	docker pull $(DOCKER_NOTEBOOK_IMAGE)
